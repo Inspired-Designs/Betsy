@@ -6,27 +6,19 @@ CREATE DATABASE betsy;
 DROP TABLE IF EXISTS shipping;
 DROP TABLE IF EXISTS reviews;
 DROP TABLE IF EXISTS pictures;
-DROP TABLE IF EXISTS sellers;
 DROP TABLE IF EXISTS items;
 
 CREATE TABLE IF NOT EXISTS items(
     item_id SERIAL PRIMARY KEY,
     description TEXT,
     price DECIMAL(10, 2),
-    seller_id INT,
-    picture_id INT
-);
-
-CREATE TABLE IF NOT EXISTS sellers(
-    seller_id SERIAL PRIMARY KEY,
-    item_id INT,
-    FOREIGN KEY (item_id) REFERENCES items(item_id)
+    seller TEXT, 
+    seller_company VARCHAR(255)
 );
 
 CREATE TABLE IF NOT EXISTS pictures(
     picture_id SERIAL PRIMARY KEY,
     item_id INT,
-    review_id INT,
     URL VARCHAR(255),
     FOREIGN KEY (item_id) REFERENCES items(item_id)
 );
@@ -52,9 +44,6 @@ CREATE TABLE IF NOT EXISTS shipping(
     delivery_country VARCHAR(100),
     origin_city VARCHAR(100),
     origin_state VARCHAR(100),
-    seller_id INT,
     item_id INT,
-    FOREIGN KEY (seller_id) REFERENCES sellers(seller_id),
     FOREIGN KEY (item_id) REFERENCES items(item_id)
 );
-
