@@ -1,8 +1,12 @@
 import React from 'react'
+import Reviews from './Reviews.jsx'
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+      {/* <div>App</div> */}
+      <Reviews />
+    </>
   )
 }
 

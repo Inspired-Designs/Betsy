@@ -1,0 +1,72 @@
+.reviewContainer {
+
+}
+
+
+.dataButtons{
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #0e0e0e17
+}
+
+.tabCounter{
+
+    display: inline-block;
+    background-color: rgb(234, 234, 234);
+    color: black;
+    border-radius: 50%;
+    border: 2xp solid grey;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-left: 12px; 
+}
+
+.reviewHeaderContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.sortBy {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sortByBtn{
+    display: flex;
+    align-items: center;
+
+}
+
+h2 {
+    font-family: "Guardian-EgypTT","Charter","Charter Bitstream","Cambria","Noto Serif Light","Droid Serif","Georgia","serif";
+    font-weight: 300;
+    font-size: 24.99px;
+    letter-spacing: .31238px;
+    margin-right: 12px;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+button {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    background: none;
+    border: none;
+    font-family: "Graphik Webfont", "Helvetica Neue", "Droid Sans", Arial, sans-serif;
+    font-size: 12.99px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+.dropdowntext {
+    font-family: "Graphik Webfont", "Helvetica Neue", "Droid Sans", Arial, sans-serif;
+    font-size: 12.99px;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+}
