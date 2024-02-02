@@ -21,10 +21,14 @@
   border-radius: 30px;
 }
 
+.CategoryContainer.hovered {
+  background-color: rgb(222, 222, 222);
+}
+
 .Burger {
-  height: 20px;
+  height: 15px;
   margin-right: 20px;
-  margin-top: 15px;
+  margin-top: 16px;
 }
 
 .SearchBar {
@@ -57,7 +61,11 @@
   /* border: 1px solid black; */
   border-radius: 20px;
   height: 30px;
-  width: 60px;
+  width: 80px;
+}
+
+.SignInButton.hovered {
+  background-color: rgb(222, 222, 222);
 }
 
 .SignIn {
@@ -70,6 +78,10 @@
   align-items: center;
   /* background-color: rgb(36, 119, 192); */
   border-radius: 30px;
+}
+
+.CartDiv.hovered {
+  background-color: rgb(222, 222, 222);
 }
 
 .CartButton {
