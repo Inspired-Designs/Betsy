@@ -28,7 +28,7 @@
 .Burger {
   height: 15px;
   margin-right: 20px;
-  margin-top: 16px;
+  margin-top: 17px;
 }
 
 .SearchBar {
@@ -45,6 +45,8 @@
   height: 25px;
   margin-top: 4px;
   margin-left: 10px;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 16px;
 }
 
 .SearchButton {
@@ -87,4 +89,17 @@
 .CartButton {
   height: 20px;
   padding: 10px;
+}
+
+.NavbarSpecials {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Use flexbox to make items display horizontally */
+  justify-content: center;
+  margin-top: -5px;
+  margin-left: 6%;
+}
+
+.NavbarSpecials li {
+  margin-right: 40px; /* Add some spacing between the list items */
 }

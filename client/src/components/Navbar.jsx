@@ -33,34 +33,43 @@ const Navbar = () => {
 
 
   return (
-    <div className="Navbar">
-      <img className="Logo" src="./images/Navbar/logo.png" />
-      <div 
-        className={`CategoryContainer ${isHovered ? 'hovered' : ''}`}
-        onMouseEnter={HandleCategoryEnter}
-        onMouseLeave={HandleCategoryLeave}
-      >
-        <img className="Burger" src="./images/Navbar/burger.png" />
-        <p>Categories</p>
+    <div>
+      <div className="Navbar">
+        <img className="Logo" src="./images/Navbar/logo.png" />
+        <div 
+          className={`CategoryContainer ${isHovered ? 'hovered' : ''}`}
+          onMouseEnter={HandleCategoryEnter}
+          onMouseLeave={HandleCategoryLeave}
+        >
+          <img className="Burger" src="./images/Navbar/burger.png" />
+          <p>Categories</p>
+        </div>
+        <div className="SearchBar">
+          <input className="SearchInput" type="text" placeholder="Search for anything" />
+          <img className="SearchButton" src="./images/Navbar/search-button.png" />
+        </div>
+        <div 
+          className={`SignInButton ${isSignInHovered ? 'hovered' : ''}`}
+          onMouseEnter={HandleSignInEnter}
+          onMouseLeave={HandleSignInLeave}
+        >
+          <p className="SignIn">Sign In</p>
+        </div>
+        <div 
+          // className="CartDiv"
+          className={`CartDiv ${isCartHovered ? 'hovered' : ''}`}
+          onMouseEnter={HandleCartEnter}
+          onMouseLeave={HandleCartLeave}
+        >
+        <img className="CartButton" src="./images/Navbar/cart.png" />
+        </div>
       </div>
-      <div className="SearchBar">
-        <input className="SearchInput" type="text" placeholder="Search for anything" />
-        <img className="SearchButton" src="./images/Navbar/search-button.png" />
-      </div>
-      <div 
-        className={`SignInButton ${isSignInHovered ? 'hovered' : ''}`}
-        onMouseEnter={HandleSignInEnter}
-        onMouseLeave={HandleSignInLeave}
-      >
-        <p className="SignIn">Sign In</p>
-      </div>
-      <div 
-        // className="CartDiv"
-        className={`CartDiv ${isCartHovered ? 'hovered' : ''}`}
-        onMouseEnter={HandleCartEnter}
-        onMouseLeave={HandleCartLeave}
-      >
-      <img className="CartButton" src="./images/Navbar/cart.png" />
+      <div>
+        <ul className="NavbarSpecials">
+          <li>Valentine's Day</li>
+          <li>Home Favorites</li>
+          <li>Fashion Finds</li>
+        </ul>
       </div>
     </div>
   )
