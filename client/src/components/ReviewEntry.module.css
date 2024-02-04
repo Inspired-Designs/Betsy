@@ -1,0 +1,25 @@
+.entryContainer {
+    display: flex;
+    flex: wrap;
+    max-width: 100%;
+    padding-top: 6px;
+    padding-bottom: 12px;
+    border-bottom-color: rgba(14,14,14, 0.18);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+/* .upperEntry{
+
+} */
+
+.ratingContainer{
+    display: flex;
+    flex: wrap;
+}
+
+.userContainer {
+    display: flex;
+    flex: wrap;
+    align-items: center;
+}

@@ -1,8 +1,3 @@
-.reviewContainer {
-
-}
-
-
 .dataButtons{
     width: 100%;
     display: inline-block;
@@ -11,7 +6,6 @@
 }
 
 .tabCounter{
-
     display: inline-block;
     background-color: rgb(234, 234, 234);
     color: black;
@@ -69,4 +63,8 @@ button {
     font-size: 12.99px;
     font-weight: 500;
     -webkit-font-smoothing: antialiased;
+}
+
+.entryContainer{
+    box-sizing: border-box
 }
