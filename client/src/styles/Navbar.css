@@ -5,8 +5,9 @@
   padding: 10px 20px;
   background-color: #ffffff; 
   color: #000000; 
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 1vh;
 }
 
 .Logo {
@@ -19,6 +20,7 @@
   justify-content: center;
   /* background-color: aliceblue; */
   width: 150px;
+  height: 30px;
   border-radius: 30px;
 }
 
@@ -29,18 +31,19 @@
 .Burger {
   height: 15px;
   margin-right: 20px;
-  margin-top: 0.4vh;
+  margin-top: 0.6vh;
 }
 
 .Category {
-  margin-bottom: 0vh;
+  margin-top: 0.1vh;
 }
 
 .SearchBar {
   border: 2px solid black;
   border-radius: 20px;
   height: 40px;
-  width: 650px;
+  width: 45vw;
+  /* width: 650px; */
   display: flex;
 }
 
