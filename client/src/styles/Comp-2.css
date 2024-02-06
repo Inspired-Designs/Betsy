@@ -1,20 +1,21 @@
 .Info {
-  margin-left: 52%;
+  margin-left: 60%;
   margin-top: 5%;
 }
 
 .Description {
-  width: 30vw;
+  width: 450px;
 }
 
 .AddCart {
   background-color: rgb(42, 42, 46);
   color: aliceblue;
   width: 25vw;
-  height: 4vh;
+  max-width: 450px;
+  height: 45px;
   padding: 10px 10px;
   text-align: center;
-  margin: 10px;
+  margin-top: 10px;
   border-radius: 30px;
 }
 
@@ -26,4 +27,5 @@
 
 .form-select {
   width: 25vw;
+  max-width: 450px;
 }

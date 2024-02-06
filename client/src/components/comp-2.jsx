@@ -2,15 +2,16 @@ import React, { Fragment, useState } from "react";
 
 const ComponentTwo = () => {
 
-  let price = "$123"
-  let description = "14k gold paperclip chain necklace, thick chain necklace | paper clip necklace, gold link necklace"
-  let finish = ['gold', 'silver', 'stainless steel']
+  let price = "$129.99"
+  let description = "Introducing our versatile chain collection, available in gold, silver, and stainless steel finishes, with lengths ranging from 14mm to 18mm, ensuring there's a perfect match for every style and occasion. Crafted with precision and durability in mind, our chains offer timeless elegance and effortless customization to elevate your look with ease."
+  let finish = ['Gold', 'Silver', 'Stainless Steel']
   let length = ['12mm', '16mm', '18mm']
 
   return (
     <div className="Info">
-      <p style={{ color: 'red' }}>In 20+ carts</p>
+      <p style={{ color: 'darkred' }}>In 20+ carts</p>
       <h3 style={{ color: 'green' }}>{price}</h3>
+      <h6 style={{ color: 'green' }}>20% off sale for the next 4 hours</h6>
       <p className="Description">{description}</p>
       <ul>
         <li>Arrives soon! Get it in less than 24 hours</li>
