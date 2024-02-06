@@ -2,6 +2,7 @@ import styles from './Reviews.module.css'
 import Star from './Star.jsx'
 import Dropdown from './Dropdown.jsx'
 import ReviewEntry from './ReviewEntry.jsx'
+import ReviewNavBar from './ReviewNavBar.jsx'
 
 const Reviews = () => {
     return (
@@ -35,6 +36,9 @@ const Reviews = () => {
                     <ReviewEntry />
                     <ReviewEntry />
                     <ReviewEntry />
+                </div>
+                <div className={styles.reviewNavContainer}>
+                    <ReviewNavBar />
                 </div>
         </div>
     )
