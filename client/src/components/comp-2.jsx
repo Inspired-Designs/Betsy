@@ -18,32 +18,23 @@ const ComponentTwo = () => {
       </ul>
 
 {/* Finish dropdown */}
-      <div className="dropdown">
-        <p className="DropDownLabel">Finish:</p>
-        <a className="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Select a finish
-        </a>
+      <p className="DropDownLabel">Finish:</p>
+      <select className="form-select" aria-label="Default select example">
+        <option selected>Select finish...</option>
+        <option value="1">{finish[0]}</option>
+        <option value="2">{finish[1]}</option>
+        <option value="3">{finish[2]}</option>
+      </select>
 
-        <ul className="dropdown-menu">
-          <li><a className="dropdown-item" href="#">{finish[0]}</a></li>
-          <li><a className="dropdown-item" href="#">{finish[1]}</a></li>
-          <li><a className="dropdown-item" href="#">{finish[2]}</a></li>
-        </ul>
-      </div>
 {/* Length dropdown */}
-      <div className="dropdown">
-        <p className="DropDownLabel">Length:</p>
-        <a className="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Select a length
-        </a>
-
-        <ul className="dropdown-menu">
-          <li><a className="dropdown-item" href="#">{length[0]}</a></li>
-          <li><a className="dropdown-item" href="#">{length[1]}</a></li>
-          <li><a className="dropdown-item" href="#">{length[2]}</a></li>
-        </ul>
-      </div>
-
+      <p className="DropDownLabel">Length:</p>
+      <select className="form-select" aria-label="Default select example">
+        <option selected>Select length...</option>
+        <option value="1">{length[0]}</option>
+        <option value="2">{length[1]}</option>
+        <option value="3">{length[2]}</option>
+      </select>
+{/* Cart Button */}
       <div className="AddCart">
         <h5>Add to cart</h5>
       </div>
