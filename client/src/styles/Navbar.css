@@ -1,0 +1,106 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff; 
+  color: #000000; 
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.Logo {
+  height: 50px;
+  margin-top: -10px;
+}
+
+.CategoryContainer {
+  display: flex;
+  justify-content: center;
+  /* background-color: aliceblue; */
+  width: 150px;
+  border-radius: 30px;
+}
+
+.CategoryContainer.hovered {
+  background-color: rgb(222, 222, 222);
+}
+
+.Burger {
+  height: 15px;
+  margin-right: 20px;
+  margin-top: 17px;
+}
+
+.SearchBar {
+  border: 2px solid black;
+  border-radius: 20px;
+  height: 40px;
+  width: 650px;
+  display: flex;
+}
+
+.SearchInput {
+  border: white;
+  width: 600px;
+  height: 25px;
+  margin-top: 4px;
+  margin-left: 10px;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 16px;
+}
+
+.SearchButton {
+  height: 25px;
+  margin-left: 5px;
+  margin-top:6px;
+  margin-right: 5px;
+}
+
+.SignInButton {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  height: 30px;
+  width: 80px;
+}
+
+.SignInButton.hovered {
+  background-color: rgb(222, 222, 222);
+}
+
+.SignIn {
+  margin-bottom: 15px;
+}
+
+.CartDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(36, 119, 192); */
+  border-radius: 30px;
+}
+
+.CartDiv.hovered {
+  background-color: rgb(205, 225, 251);
+}
+
+.CartButton {
+  height: 20px;
+  padding: 10px;
+}
+
+.NavbarSpecials {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Use flexbox to make items display horizontally */
+  justify-content: center;
+  margin-top: -5px;
+  margin-left: 6%;
+}
+
+.NavbarSpecials li {
+  margin-right: 40px; /* Add some spacing between the list items */
+}
