@@ -47,7 +47,6 @@ const ComponentTwo = () => {
       <div className="AddCart">
         <h5>Add to cart</h5>
       </div>
-      {/* star seller */}
     </div>
   )
 }
