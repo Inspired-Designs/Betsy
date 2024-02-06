@@ -85,6 +85,7 @@
   align-items: center;
   /* background-color: rgb(36, 119, 192); */
   border-radius: 30px;
+  padding: 10px;
 }
 
 .CartDiv.hovered {
@@ -93,7 +94,6 @@
 
 .CartButton {
   height: 20px;
-  padding: 10px;
 }
 
 .NavbarSpecials {
