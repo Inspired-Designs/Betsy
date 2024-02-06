@@ -1,0 +1,32 @@
+.Info {
+  margin-left: 52%;
+  margin-top: 5%;
+}
+
+.Description {
+  width: 30vw;
+}
+
+.AddCart {
+  background-color: rgb(42, 42, 46);
+  color: aliceblue;
+  width: 25vw;
+  height: 4vh;
+  padding: 10px 10px;
+  text-align: center;
+  margin: 10px;
+  border-radius: 30px;
+}
+
+.btn {
+  background-color: rgb(255, 255, 255);
+  color: rgb(38, 38, 38);
+  margin-left: 1vw;
+  width: 24vw;
+}
+
+.DropDownLabel {
+  margin-left: 3%;
+  margin-bottom: 0%;
+  margin-top: 2%;
+}

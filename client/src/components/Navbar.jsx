@@ -42,7 +42,7 @@ const Navbar = () => {
           onMouseLeave={HandleCategoryLeave}
         >
           <img className="Burger" src="./images/Navbar/burger.png" />
-          <p>Categories</p>
+          <p className="Category">Categories</p>
         </div>
         <div className="SearchBar">
           <input className="SearchInput" type="text" placeholder="Search for anything" />
