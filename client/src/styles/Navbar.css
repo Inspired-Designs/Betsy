@@ -29,7 +29,11 @@
 .Burger {
   height: 15px;
   margin-right: 20px;
-  margin-top: 17px;
+  margin-top: 0.4vh;
+}
+
+.Category {
+  margin-bottom: 0vh;
 }
 
 .SearchBar {
@@ -72,7 +76,7 @@
 }
 
 .SignIn {
-  margin-bottom: 15px;
+  margin-bottom: 0vh;
 }
 
 .CartDiv {
