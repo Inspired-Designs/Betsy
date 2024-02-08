@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./components/App.jsx";
 import Navbar from "./components/Navbar.jsx";
+import ImageGallery from "./components/Image-Gallery.jsx";
+import imageLinks from "./imageData.js";
 import Styles from "./styles/Navbar.css";
 import Style from "./styles/Comp-2.css";
 import ComponentTwo from "./components/comp-2.jsx";
@@ -10,6 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Navbar />
+    <ImageGallery imageLinks={imageLinks} />
     <ComponentTwo />
     <App />
   </React.StrictMode>

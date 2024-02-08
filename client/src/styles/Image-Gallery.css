@@ -1,0 +1,40 @@
+.image-viewer {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+.thumnail-and-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.thumnail-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+}
+
+.thumnail-list img {
+    display: block;
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.main-image {
+    display: flex;
+    align-items: center;
+}
+
+.main-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-image button {
+    margin-top: 10px;
+}
