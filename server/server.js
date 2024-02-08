@@ -143,6 +143,16 @@ app.get("/pictures/:id", async (req, res) => {
   }
 });
 
+app.get("/shipping", async (req, res) => {
+  try {
+    let data = await pool.query("SELECT * FROM shipping");
+    res.status(200).json(data.rows);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("could not retrieve shipping information");
+  }
+});
+
 function logger(req, res, next) {
     console.log(`The request method was ${req.method}`);
     console.log(`The request URL was ${req.url}`);
