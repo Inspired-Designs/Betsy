@@ -34,17 +34,17 @@ function ShippingAndReturnInfo() {
     fetchData();
   }, []);
 
-  console.log("shippingData", shippingData)
   return (
     <div className="shipping-info-container">
+      <ItemDetails />
       <h2 onClick={toggleExpansion(expandedShipping, setExpandedShipping)}>Shipping and return policies</h2>
       {expandedShipping && (
         <div>
           <ShippingDate />
           <p>Returns & exchanges accepted within 14 days</p>
-          <p>Cost to ship: ${shippingData.shipping_cost}</p>
-          <p>Deliver to {shippingData.delivery_country}, {shippingData.delivery_zip}</p>
-          <p>Ships from {shippingData.origin_city}, {shippingData.origin_state}</p>
+          <p>Cost to ship: ${shippingData[0].shipping_cost}</p>
+          <p>Deliver to {shippingData[0].delivery_country}, {shippingData[0].delivery_zip}</p>
+          <p>Ships from {shippingData[0].origin_city}, {shippingData[0].origin_state}</p>
         </div>
       )}
       <h2 onClick={toggleExpansion(expandedFAQ, setExpandedFAQ)}>FAQs</h2>

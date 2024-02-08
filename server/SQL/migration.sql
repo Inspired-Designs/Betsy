@@ -1,5 +1,3 @@
--- asd;f
-
 CREATE DATABASE betsy;
 \c betsy;
 
@@ -18,32 +16,32 @@ CREATE TABLE IF NOT EXISTS items(
 
 CREATE TABLE IF NOT EXISTS pictures(
     picture_id SERIAL PRIMARY KEY,
-    item_id INT,
-    URL VARCHAR(255),
-    FOREIGN KEY (item_id) REFERENCES items(item_id)
+    item_id INT REFERENCES items(item_id)
 );
 
-CREATE TABLE reviews (
+CREATE TABLE IF NOT EXISTS reviews (
     review_id SERIAL PRIMARY KEY,
-    review_name TEXT,
-    rating_ovr INT,
-    rating_qual INT,
-    rating_shipping INT,
+    reviewers_name VARCHAR(255),
+    rating INT CHECK (rating >= 1 AND rating <= 5), -- keeps it 1-5 system
+    rating_item_qual INT CHECK (rating_item_qual >= 1 AND rating_item_qual <= 5), -- keeps it 1-5
+    rating_shipping INT CHECK (rating_shipping >= 1 AND rating_shipping <= 5), -- keeps it 1-5
     review_text TEXT,
-    reccomend BOOLEAN,
-    review_date TEXT,
+    recommend BOOLEAN,
+    review_date DATE DEFAULT CURRENT_DATE,
     picture_id INT REFERENCES pictures(picture_id),
     item_id INT REFERENCES  items(item_id)
 );
 
 CREATE TABLE IF NOT EXISTS shipping(
     shipping_id SERIAL PRIMARY KEY,
-    date DATE DEFAULT CURRENT_DATE,
+    early_date DATE DEFAULT CURRENT_DATE + INTERVAL '7 days',
+    late_date DATE DEFAULT CURRENT_DATE + INTERVAL '14 days',
     shipping_cost DECIMAL(10, 2),
     delivery_zip VARCHAR(50),
     delivery_country VARCHAR(100),
     origin_city VARCHAR(100),
     origin_state VARCHAR(100),
-    item_id INT,
-    FOREIGN KEY (item_id) REFERENCES items(item_id)
+    item_id INT REFERENCES items(item_id)
 );
+
+\i seed.sql;

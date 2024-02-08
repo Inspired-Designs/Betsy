@@ -1,27 +1,19 @@
+
 .shipping-info-container {
-    font-family: "Graphik Webfont",
-        "Helvetica Neue",
-        "Droid Sans",
-        Arial,
-        sans-serif;;
-    padding: 20px;
+    font-family: "Graphik Webfont", "Helvetica Neue", "Droid Sans", Arial, sans-serif;
+    padding: 10px;
 }
+
 
 .shipping-info-container h2:hover {
     cursor: pointer;
-    background-color: grey;
+    background-color: lightgrey;
+    padding: 8px;
+    border-radius: 8px;
 }
 
 .seller-name {
-    font-family: "Guardian-EgypTT",
-        "Charter",
-        "Charter Bitstream",
-        "Cambria",
-        "Noto Serif Light",
-        "Droid Serif",
-        "Georgia",
-        serif;;
-
+    font-family: "Guardian-EgypTT", "Charter", "Charter Bitstream", "Cambria", "Noto Serif Light", "Droid Serif", "Georgia", serif;
     font-size: xx-large;
 }
 
@@ -29,9 +21,11 @@
     font-weight: 5000;
 }
 
-.faqs:hover{
+.faqs:hover {
     cursor: pointer;
-    background-color: grey;
+    background-color: lightgrey;
+    padding: 6px 10px;
+    border-radius: 6px;
 }
 
 .expanded-info {
