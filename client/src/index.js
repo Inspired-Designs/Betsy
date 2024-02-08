@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./components/App";
-import Navbar from "./components/Navbar";
-import Styles from "./styles/Navbar.css"
+import App from "./components/App.jsx";
+import Navbar from "./components/Navbar.jsx";
+import Styles from "./styles/Navbar.css";
 import Style from "./styles/Comp-2.css";
-import ComponentTwo from "./components/Comp-2";
+import ComponentTwo from "./components/comp-2.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
