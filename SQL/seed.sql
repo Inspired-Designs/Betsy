@@ -1,5 +1,5 @@
 -- INSERT BLOCK FOR ITEMS TABLE
-INSERT INTO items(description, price, seller, sellar_company) VALUES 
+INSERT INTO items(description, price, seller, seller_company) VALUES 
 ('14K Gold Paperclip Chain Necklace, Thick Chain Necklace | Paper Clip Necklace, Gold Link Necklace | Chain Choker Necklace, 925 Silver Chain', 24.79, Apollonia, ApolloniaJewelryInc);
 
 
@@ -20,6 +20,6 @@ INSERT INTO reviews (reviewName, ratingOVR, ratingQual, ratingShipping, reviewTe
 
 
 -- INSERT BLOCK FOR SHIPPING NOT SURE ABOUT DATE
-INSERT INTO shipping (date, shipping_cost, delivery_zip, delivery_country, origin_city, origin_state, item_id) VALUES 
-(NULL, 3.74, 31314, 'United States', 'Northvale', 'NJ', NULL)
+INSERT INTO shipping (shipping_cost, delivery_zip, delivery_country, origin_city, origin_state, item_id) VALUES 
+(3.74, 31314, 'United States', 'Northvale', 'NJ', NULL)
 
