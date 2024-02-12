@@ -1,0 +1,43 @@
+.shipping-info-container {
+    font-family: "Graphik Webfont",
+        "Helvetica Neue",
+        "Droid Sans",
+        Arial,
+        sans-serif;;
+    padding: 20px;
+}
+
+.shipping-info-container h2:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+.seller-name {
+    font-family: "Guardian-EgypTT",
+        "Charter",
+        "Charter Bitstream",
+        "Cambria",
+        "Noto Serif Light",
+        "Droid Serif",
+        "Georgia",
+        serif;;
+
+    font-size: xx-large;
+}
+
+.faqs {
+    font-weight: 5000;
+}
+
+.faqs:hover{
+    cursor: pointer;
+    background-color: grey;
+}
+
+.expanded-info {
+    display: block;
+}
+
+.collapsed-info {
+    display: none;
+}
