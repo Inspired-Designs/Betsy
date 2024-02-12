@@ -37,6 +37,7 @@ function ShippingAndReturnInfo() {
   console.log("shippingData", shippingData)
   return (
     <div className="shipping-info-container">
+      <ItemDetails />
       <h2 onClick={toggleExpansion(expandedShipping, setExpandedShipping)}>Shipping and return policies</h2>
       {expandedShipping && (
         <div>

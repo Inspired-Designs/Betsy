@@ -3,7 +3,7 @@ import pg from "pg";
 import dotenv from "dotenv";
 import cors from "cors"
 
-dotenv.config({ path: "../.env" });
+dotenv.config({ path: "./.env" });
 
 const { DATABASE_URL, EXPRESS_PORT } = process.env;
 const { Pool } = pg;
@@ -107,7 +107,6 @@ function logger(req, res, next) {
   next();
 }
 
-const { EXPRESS_PORT } = process.env;
 app.listen(EXPRESS_PORT, () => {
   console.log(`Server running on port ${EXPRESS_PORT}`);
 });
