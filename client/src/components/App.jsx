@@ -1,8 +1,9 @@
 import React from 'react'
+import Shipping from "./Shipping"
 
 const App = () => {
   return (
-    <div></div>
+    <Shipping />
   )
 }
 
