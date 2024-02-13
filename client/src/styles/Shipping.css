@@ -5,6 +5,7 @@
         Arial,
         sans-serif;;
     padding: 20px;
+    margin-left: 5%;
 }
 
 .shipping-info-container h2:hover {
@@ -40,4 +41,14 @@
 
 .collapsed-info {
     display: none;
+}
+
+h2 {
+    background-color: rgba(56, 57, 57, 0.553);
+    width: 20vw;
+    text-align: center;
+    border-radius: 30px;
+    color: aliceblue;
+    font-size: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.394);
 }

@@ -6,7 +6,7 @@ import ImageGallery from "./components/Image-Gallery.jsx";
 import imageLinks from "./imageData.js";
 import Styles from "./styles/Navbar.css";
 import Style from "./styles/Comp-2.css";
-import ComponentTwo from "./components/comp-2.jsx";
+import ComponentTwo from "./components/Comp-2.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

@@ -5,7 +5,7 @@ const ItemDetails = () => {
   const [expandedDetails, setExpandedDetails] = useState(false);
 
   return (
-    <div>
+    <div className='item-details'>
       <h2 onClick={() => setExpandedDetails(!expandedDetails)}>Item Details</h2>
       {expandedDetails && (
         <div>

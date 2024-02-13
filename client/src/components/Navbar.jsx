@@ -31,7 +31,6 @@ const Navbar = () => {
     setIsCartHovered(false)
   }
 
-
   return (
     <div>
       <div className="Navbar">

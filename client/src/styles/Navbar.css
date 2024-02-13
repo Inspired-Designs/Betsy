@@ -1,9 +1,14 @@
+body {
+  background: linear-gradient(135deg, #397089d7, #ffffff); /* Change colors and angle as needed */
+  height: 100%;
+}
+
 .Navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #ffffff; 
+  /* background-color: #ffffff;  */
   color: #000000; 
   margin-left: 10vw;
   margin-right: 10vw;
@@ -47,12 +52,17 @@
 
 .SearchInput {
   border: white;
+  background: linear-gradient(135deg, #a7bec500, #ffffff00); /* Change colors and angle as needed */
   width: 50vw;
   height: 25px;
   margin-top: 4px;
   margin-left: 10px;
   font-family:'Courier New', Courier, monospace;
   font-size: 16px;
+}
+
+.SearchInput::placeholder{
+  color: rgb(0, 0, 0);
 }
 
 .SearchButton {
