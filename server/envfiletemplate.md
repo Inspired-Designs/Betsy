@@ -11,7 +11,7 @@ DATABASE_URL="postgres://<your_username>:<your_password>@<your_host>:5432/<your_
 
 ```
 EXPRESS_PORT=8000
-DATABASE_URL="postgres://username:password@localhost:5432/betsy"
+DATABASE_URL="postgres://betsydb_user:FqhyJvPuEeXu0dM5uGJQyAaqCfxNptBJ@dpg-cn5vikun7f5s73ej1kbg-a.oregon-postgres.render.com/betsydb?ssl=true"
 ```
 
 ### Notes:
