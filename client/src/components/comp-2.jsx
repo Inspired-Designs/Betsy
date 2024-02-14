@@ -30,7 +30,7 @@ const ComponentTwo = () => {
   return (
     <div className="Info">
       <p style={{ color: 'darkred' }}>In 20+ carts</p>
-      <h3 style={{ color: 'green' }}>{priceData}</h3>
+      <h3 style={{ color: 'green' }}>${priceData}</h3>
       <h6 style={{ color: 'green' }}>20% off sale for the next 4 hours</h6>
       <p className="Description">{descriptionData}</p>
       <ul>

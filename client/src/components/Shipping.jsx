@@ -39,7 +39,6 @@ function ShippingAndReturnInfo() {
           throw new Error('Failed to fetch shipping data');
         }
         const data = await response.json();
-        console.log("customer data", data)
         setCustomerData(data)
       } catch (error) {
         console.error('Error fetching shipping data', error)
