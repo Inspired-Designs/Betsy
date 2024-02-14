@@ -14,11 +14,12 @@ function ShippingAndReturnInfo() {
   const [expandedCare, setExpandedCare] = useState(false);
   const [expandedLost, setExpandedLost] = useState(false);
   const [expandedDefect, setExpandedDefect] = useState(false);
-  const [shippingData, setShippingData] = useState({})
+  const [shippingData, setShippingData] = useState({});
+  const [customerData, setCustomerData] = useState({});
 
   
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchShippingData = async () => {
       try {
         const response = await fetch('http://localhost:8000/shipping');
         if (!response.ok) {
@@ -31,10 +32,24 @@ function ShippingAndReturnInfo() {
       }
     }
     
-    fetchData();
+    const fetchCustomerData = async () => {
+      try {
+        const response = await fetch('http://localhost:8000/customer');
+        if (!response.ok) {
+          throw new Error('Failed to fetch shipping data');
+        }
+        const data = await response.json();
+        console.log("customer data", data)
+        setCustomerData(data)
+      } catch (error) {
+        console.error('Error fetching shipping data', error)
+      }
+    }
+
+    fetchShippingData();
+    fetchCustomerData();
   }, []);
 
-  console.log("shippingData", shippingData)
   return (
     <div className="shipping-info-container">
       <ItemDetails />
@@ -44,7 +59,7 @@ function ShippingAndReturnInfo() {
           <ShippingDate />
           <p>Returns & exchanges accepted within 14 days</p>
           <p>Cost to ship: ${shippingData.shipping_cost}</p>
-          <p>Deliver to {shippingData.delivery_country}, {shippingData.delivery_zip}</p>
+          <p>Deliver to {customerData.delivery_country}, {customerData.delivery_zip}</p>
           <p>Ships from {shippingData.origin_city}, {shippingData.origin_state}</p>
         </div>
       )}

@@ -13,7 +13,6 @@ const ComponentTwo = () => {
           throw new Error('Failed to fetch shipping data');
         }
         const data = await response.json();
-        console.log('data', data[0].price)
         setPriceData(data[0].price);
         setDescriptionData(data[0].item_description)
       } catch (error) {
@@ -25,7 +24,6 @@ const ComponentTwo = () => {
   }, []);
 
 
-  let description = "Introducing our versatile chain collection, available in gold, silver, and stainless steel finishes, with lengths ranging from 14mm to 18mm, ensuring there's a perfect match for every style and occasion. Crafted with precision and durability in mind, our chains offer timeless elegance and effortless customization to elevate your look with ease."
   let finish = ['Gold', 'Silver', 'Stainless Steel']
   let length = ['12mm', '16mm', '18mm']
 
